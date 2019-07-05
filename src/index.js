@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from "./components/Home.js";
+import Navbar from "./components/Navbar.js";
 import NotFound from "./components/NotFound.js";
 import * as serviceWorker from './serviceWorker';
 
@@ -9,10 +10,12 @@ import * as serviceWorker from './serviceWorker';
 const App = () => {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route component={NotFound} />
-      </Switch>
+      <Navbar>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route component={NotFound} />
+        </Switch>
+      </Navbar>
     </Router>
   )
 }
