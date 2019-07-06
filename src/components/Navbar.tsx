@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { Navbar } from "react-bulma-components";
 import logo from "../styles/assets/replacewithlogo.png";
 
 class NavBar extends Component {
@@ -8,7 +7,7 @@ class NavBar extends Component {
 			<nav className="navbar is-info" role="navigation" aria-label="main navigation">
 				<div className="navbar-brand">
 					<a className="navbar-item" href="">
-						<figure className="image is-150x80">
+						<figure className="image is-30x10">
 							<img className="is-rounded" src={logo} width="112" height="28" />
 						</figure>
 					</a>
